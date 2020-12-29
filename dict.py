@@ -14,7 +14,10 @@ print(dict)
 for key, value in dict.items():
   print(key,"=",value)
 
+
 to_remove = []
+# cant for i in dict:
+  # dict.pop(i)
 for i in dict:
   if(i[1] > 2015):
     to_remove.append(i)
