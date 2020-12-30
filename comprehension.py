@@ -8,6 +8,6 @@ print(list2)
 dict1 = {i:i**2 for i in range (1,11)}
 print(dict1)
 
-dict2 = {i:chr(i) for i in range (65,90)}
+dict2 = {i:chr(i) for i in range (65,91)}
 # dict2.  {[i:chr(i) for i in range (97,122)]}
 print(dict2)
