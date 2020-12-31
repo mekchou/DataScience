@@ -17,4 +17,6 @@ print(either)
 
 both = color_1.intersection(color_2)
 print(both)
-both
+
+print(color_1 | color_2)
+print(color_1 & color_2)
