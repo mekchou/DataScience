@@ -8,7 +8,7 @@ import collections
 # open the 98-0.txt input file
 input_file=open(r'C:\Users\MekChou\OneDrive\Code\Python\word_cloud\98-0.txt', encoding="utf8")
 stopword_file=open(r'C:\Users\MekChou\OneDrive\Code\Python\word_cloud\stopwords.txt', encoding="utf8")
-
+# print(input_file.read())
 # number of words to print is 10
 num_words = 10
 
