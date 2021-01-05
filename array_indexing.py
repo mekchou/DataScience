@@ -23,3 +23,24 @@ print(row_rank1,row_rank1.shape)
 # slicing alone generates an array of the same rank
 row_rank2 = array_1[1:2,:]
 print(row_rank2,row_rank2.shape)
+
+# create a new array
+array_2 = np.array([[11,12,13],[21,22,23],[31,32,33],[41,42,43]])
+print('Original Array:')
+print(array_2)
+
+# create array of indices
+col_indices = np.array([0,1,2,0])
+print('\nCol indies picked:',col_indices)
+row_indices = np.arange(4)
+print('\nRow indies picked:',row_indices)
+
+# examine the pairings of row_indices and col_indices
+for row,col in zip(row_indices,col_indices):
+  print(row,",",col)
+# select one element from each row
+print('Value in the array at those indices:', array_2[row_indices,col_indices])
+# change one element from each row using the indices selected
+array_2[row_indices,col_indices] += 100
+print('\nChanged Array:')
+print(array_2)
